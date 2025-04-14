@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VibeTune</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="assets/icons/favicon.ico">
+</head>
+<body>
+  <div class="app-container">
+    <header class="app-header">
+      <img src="assets/icons/logo.png" alt="VibeTune Logo" class="logo">
+      <h1 class="app-title">VibeTune</h1>
+    </header>
+
+    <main class="main-content">
+      <div class="player">
+        <img src="assets/images/default-cover.jpg" alt="Album Cover" class="cover" id="cover">
+        <h2 id="song-title">Select a Song</h2>
+        <audio id="audio-player">
+          <source src="" type="audio/mpeg" id="audio-source">
+          Your browser does not support the audio element.
+        </audio>
+        <div class="controls">
+          <button id="prev" class="control-btn">⏮️</button>
+          <button id="play" class="control-btn">▶️</button>
+          <button id="next" class="control-btn">⏭️</button>
+        </div>
+      </div>
+
+      <div class="playlist">
+        <h3>Playlist</h3>
+        <ul id="song-list">
+          <!-- Songs will be dynamically populated here -->
+        </ul>
+      </div>
+    </main>
+
+    <footer class="app-footer">
+      <p>&copy; 2025 VibeTune. All rights reserved.</p>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
