@@ -1,0 +1,119 @@
+/* style.css */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, #1d1f21, #2c3e50);
+  color: #f5f5f5;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.app-container {
+  background-color: #121212;
+  width: 90%;
+  max-width: 500px;
+  padding: 20px;
+  border-radius: 16px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
+}
+
+.app-header {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.logo {
+  width: 40px;
+  height: 40px;
+}
+
+.app-title {
+  font-size: 1.8rem;
+  color: #f39c12;
+}
+
+.main-content {
+  text-align: center;
+}
+
+.cover {
+  width: 100%;
+  border-radius: 12px;
+  margin-bottom: 15px;
+}
+
+#song-title {
+  font-size: 1.3rem;
+  margin-bottom: 10px;
+  color: #ecf0f1;
+}
+
+audio {
+  width: 100%;
+  margin: 10px 0;
+}
+
+.controls {
+  display: flex;
+  justify-content: space-around;
+  margin: 15px 0;
+}
+
+.control-btn {
+  background: #f39c12;
+  border: none;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 8px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.control-btn:hover {
+  background: #e67e22;
+}
+
+.playlist {
+  text-align: left;
+  margin-top: 20px;
+}
+
+.playlist h3 {
+  margin-bottom: 10px;
+  color: #f39c12;
+}
+
+#song-list {
+  list-style: none;
+}
+
+#song-list li {
+  background: #1c1c1c;
+  padding: 10px;
+  margin-bottom: 8px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+#song-list li:hover {
+  background: #2c3e50;
+}
+
+.app-footer {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 0.85rem;
+  color: #999;
+}
